@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>form.html</title>
+</head>
+
+<style>
+	form.withtable {
+		display: table;
+	}
+
+	div.withtable {
+		display: table-row;
+	}
+
+	label,
+	input {
+		display: table-cell;
+		margin-bottom: 10px;
+	}
+
+	label {
+		padding-right: 10px;
+		font-weight: bold;
+		vertical-align: middle;
+	}
+</style>
+
+<body>
+
+	<h2>FORMULIR PENDAFTARAN PRAKTIKAN</h2>
+	<form action="table.html" method="get" class="withtable">
+		<div class="withtable">
+			<label for="nim">NIM </label>
+			<input type="number" name="nim" id="nim" value="1303194010" readonly>
+		</div>
+		<div class="withtable">
+			<label for="username">Username</label>
+			<input type="username" name="username" id="username" value="sultankautsar" disabled>
+		</div>
+		<div class="withtable">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" required>
+		</div>
+		<div class="withtable">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" required>
+		</div>
+		<div class="withtable">
+			<label for="gender">Jenis Kelamin</label>
+			<input type="radio" name="gender" value="Laki-laki">Laki-Laki
+			<input type="radio" name="gender" value="Perempuan">Perempuan
+		</div>
+		<div class="withtable">
+			<label for="minat">Minat</label>
+			<input type="checkbox" name="minat">Renang<br>
+			<input type="checkbox" name="minat">Bersepeda<br>
+			<input type="checkbox" name="minat">Memancing<br>
+		</div>
+		<div class="withtable">
+			<label for="study">Jenis Pendidikan</label>
+			<select name="pendidikan" id="pendidikan">
+				<option value="pilih" selected>----PILIH----</option>
+				<option value="D3">D3</option>
+				<option value="S1">S1</option>
+				<option value="S2">S2</option>
+				<option value="S3">S3</option>
+			</select>
+		</div>
+		<div class="withtable">
+			<label for="photo">Upload Foto</label>
+			<input name="photo" type="file">
+		</div>
+		<div class="withtable">
+			<label>Harapan</label>
+			<textarea cols="50%" rows="5"></textarea>
+		</div>
+		<div class="withtable">
+			<button>Cancel</button>
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+
+
+</body>
+
+</html>

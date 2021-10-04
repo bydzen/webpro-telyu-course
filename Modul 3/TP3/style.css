@@ -1,0 +1,68 @@
+/*----------------CSS nya disini yaa--------------------*/
+
+body {
+    background-image: url(bck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Arial";
+    text-align: center;
+    overflow: hidden;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+button {
+    background-color: #ffd600;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #022c9f;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn_1303194010 {
+    text-align: center;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+form, button {
+    border-radius: 5px;
+}
+
+input {
+    border-width: 0 0 3px 0;
+    border-color: #ddd;
+    line-height: 25px;
+    display: block;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+input:focus {
+    border-color: #022c9f;
+    outline: none;
+    background-color: #ffd600;
+}
+
+.center-input_1303194010 {
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    display: inline-block;
+    width: 400px;
+    margin-top: 35vh;
+}

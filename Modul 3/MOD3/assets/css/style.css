@@ -1,0 +1,113 @@
+/* Ketik CSS kamu di sini */
+nav {
+	background-color: #26AA79;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	padding: 3vh 5vh;
+	position: fixed;
+	width: 100%;
+	vertical-align: middle;
+	font-size: 2vh;
+}
+
+nav p {
+	padding: 0.5vh 1.5vh;
+}
+
+ul, li a {
+	color: #FFFFFF;
+	display: flex;
+}
+
+a {
+	padding: 0.5vh 1.5vh;
+	border-radius: 10px;
+}
+
+a:hover {
+	background-color: white;
+	color: #26AA79;
+	padding: 0.5vh 1.5vh;
+	border-radius: 10px;
+}
+
+li {
+	margin-left: 3vh;
+}
+
+header {
+	background-color: #26AA79;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 20vh 0;
+}
+
+h1, h2 {
+	font-weight: lighter;
+}
+
+h1 {
+	font-size: 3.5vh;
+}
+
+h2 {
+	font-size: 2.2vh;
+}
+
+h3 {
+	font-size: 2vh;
+}
+
+.row {
+	display: flex;
+	flex: content;
+	vertical-align: middle;
+}
+
+.col {
+	padding: 2vh;
+}
+
+.row .col h3 {
+	text-align: center;
+}
+
+img {
+	display: flex;
+	width: 46.4vh;
+}
+
+footer {
+	background-color: #26AA79;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 1vh 0;
+	font-size: 2vh;
+}
+
+@media screen and (max-width: 992px) {
+	.row {
+		display: flex;
+    	justify-content: center;
+    	flex-wrap: wrap;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	.row {
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+	}
+
+	.col {
+		padding: 1vh;
+		width: 100%;
+	}
+
+	.col img {
+		width: 100%;
+	}
+
+}

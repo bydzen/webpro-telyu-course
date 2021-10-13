@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script type="text/javascript" src="soal3.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Perhitungan Sederhana</title>
+</head>
+<body>
+	<center style="margin-top: 250px;">
+		<h1> Javascript Hitung Sederhana</h1>
+	<form name="form1" action="#">
+
+		<input type="text" name="x" />
+		<select name="opt">
+			<option value="tambah"> + </option>
+			<option value="kurang"> - </option>
+			<option value="kali"> * </option>
+			<option value="bagi"> / </option>
+		</select>
+		<input type="text" name="y" />
+		<input type="button" value="=" onClick="hitung()" />
+		<input type="text" name="hasil" disabled="true" /><br/><br>
+		<input style="margin-right: 540px;" type="button" value="Reset" onClick="resetForm()" />
+	</form>
+	</center>
+</body>
+</html>

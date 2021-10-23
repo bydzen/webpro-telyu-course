@@ -1,0 +1,30 @@
+[
+    {
+      "no": 1,
+      "objectName": "username",
+      "type": "String",
+      "value": "username: \"name\"",
+      "example": "username: \"webproiflab\""
+    },
+    {
+      "no": 2,
+      "objectName": "fullname",
+      "type": "String",
+      "value": "fullname: \"your_name\"",
+      "example": "name: \"webproiflab\""
+    },
+    {
+      "no": 3,
+      "objectName": "address",
+      "type": "String",
+      "value": "address: \"address\"",
+      "example": " address: \"IFLAB\""
+    },
+    {
+      "no": 4,
+      "objectName": "image",
+      "type": "String",
+      "value": "url_image: \"link\"",
+      "example": " image: \"IFLAB.png\""
+    }
+   ]

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Soal No.8 | 1303194010</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- LOAD YOUR CSS HERE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <!-- PUT YOUR SELECTOR -->
+        <button class="show">Show</button>
+        <button class="hide">Hide</button>
+        <button class="up">Up</button>
+        <button class="left">Left</button>
+        <button class="right">Right</button>
+    </div>
+
+    </div>
+    <div class="impostor">
+        <!-- LOAD impos.png here -->
+        <img src="/img/impos.png">
+        <h1></h1>
+        <!-- End Of Load impos.png -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Put Your JQuery Function here
+            $("img").hide();
+
+            $(".show").click(function () {
+                $("img").show();
+                $("img").css({ "transform": "rotate(0deg)" });
+                $("h1").text("Active Button: Show");
+            })
+
+            $(".hide").click(function () {
+                $("img").hide();
+                $("h1").text("Active Button: Hide");
+            })
+
+            $(".up").click(function () {
+                $("img").show();
+                $("img").css({ "transform": "rotate(180deg)" });
+                $("h1").text("Active Button: Up");
+            })
+
+            $(".left").click(function () {
+                $("img").show();
+                $("img").css({ "transform": "rotate(0deg)" });
+                $("h1").text("Active Button: Left");
+            })
+
+            $(".right").click(function () {
+                $("img").show();
+                $("img").css({ "transform": "rotateY(180deg)" });
+                $("h1").text("Active Button: Right");
+            })
+
+        })
+    </script>
+</body>
+
+</html>

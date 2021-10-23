@@ -24,6 +24,7 @@
     <div class="impostor">
         <!-- LOAD impos.png here -->
         <img src="/img/impos.png">
+        <!-- DOM for h1 tag -->
         <h1></h1>
         <!-- End Of Load impos.png -->
     </div>
@@ -34,29 +35,33 @@
             // Put Your JQuery Function here
             $("img").hide();
 
+            // Show image
             $(".show").click(function () {
                 $("img").show();
-                $("img").css({ "transform": "rotate(0deg)" });
-                $("h1").text("Active Button: Show");
+                $("h1").text("Active Button: Show");            // DOM selector for h1 tag
             })
 
+            // Hide image
             $(".hide").click(function () {
                 $("img").hide();
                 $("h1").text("Active Button: Hide");
             })
 
+            // Rotate image 180 degree
             $(".up").click(function () {
-                $("img").show();
+                $("img").show();                                // If the image hide, it'll show image first
                 $("img").css({ "transform": "rotate(180deg)" });
                 $("h1").text("Active Button: Up");
             })
 
+            // Put back image to normal (0 degree)
             $(".left").click(function () {
                 $("img").show();
                 $("img").css({ "transform": "rotate(0deg)" });
                 $("h1").text("Active Button: Left");
             })
 
+            // Rotate image 180 degree in Y axis
             $(".right").click(function () {
                 $("img").show();
                 $("img").css({ "transform": "rotateY(180deg)" });

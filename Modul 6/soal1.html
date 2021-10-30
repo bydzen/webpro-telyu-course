@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JQuery</title>
+  <!--MASUKAN FILE JAVASCRIPT-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#name_error_msg").hide();
+
+      $("#btn1").click(function () {
+        $("ol").append('<li>' + $('#nama').val());
+      });
+
+      $("#btn2").click(function () {
+        $("li").css({ "color": "red", "font-style": "italic" });
+      });
+
+      $("#btn3").click(function () {
+        $("#animasi").animate({
+          marginTop: "50px",
+        }, 1500);
+      });
+
+      $("#btn4").click(function () {
+        $("#animasi").hide();
+      });
+
+      $("#btn5").click(function () {
+        $("#animasi").show();
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <h2>EZ JQuery</h2>
+  <div style="padding-top: 20px">
+    <table>
+      <tr>
+        <td>Username: </td>
+        <td><input type="text" id="nama"></td>
+        <td><span id="name_error_msg"></span></td>
+      </tr>
+    </table>
+
+    <button id="btn1">submit</button>
+    <button id="btn2">Text Style</button>
+    <button id="btn3">Animasi</button>
+    <button id="btn4">Hide</button>
+    <button id="btn5">Show</button>
+    <div id="animasi"
+      style="padding: 5px;background-color: #000000;color: #FFFFFF;width: 24%;margin-top: 10px; position:absolute;">
+      <ol>
+        <li>Ansu Fati</li>
+        <li>Sergio Ramos</li>
+      </ol>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 Project ini ditujukan untuk memenuhi tugas layout mata kuliah Pemrograman Web.
 
 ### Live Preview
-- [sultankautsar.com/project/learn/layout1](https://sultankautsar.com/project/learn/layout1/){target=_blank}
+- [sultankautsar.com/project/learn/layout1](https://sultankautsar.com/project/learn/layout1/)
 
 ### Technology
 1. Bootstrap
